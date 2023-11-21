@@ -29,3 +29,8 @@ a.navbar-brand img{
     height: 40px;
     border-radius: 50%;
 }
+@media (max-width: 993px){
+    #navbarSupportedContent{
+        background-color: #000;
+    }
+}
