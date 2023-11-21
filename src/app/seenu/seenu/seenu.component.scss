@@ -1,0 +1,15 @@
+.table-container{
+    overflow-x: auto;
+
+    tr th{
+        background-color: #000;
+        color: #fff;
+    }
+    tr td{
+        background-color: #e5e5e5;
+        color: #000;
+    }
+    tr th,tr td{
+        border: 1px solid #fff;
+    }
+}
