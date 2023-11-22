@@ -32,5 +32,6 @@ a.navbar-brand img{
 @media (max-width: 993px){
     #navbarSupportedContent{
         background-color: #000;
+        z-index: 1;
     }
 }
