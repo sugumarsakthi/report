@@ -19,46 +19,46 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class SeenuComponent {
   displayedColumns: string[] = ['position', 'date', 'amount', 'status'];
   dataSource = ELEMENT_DATA;
-  public ngAfterViewInit(): void {
+  ngOnInit(){
     this.createChartPie();
   }
   createChartPie(){
-  const chart = Highcharts.chart('chart-pie', {
-    chart: {
-      type: 'pie',
+    const chart = Highcharts.chart('chart-pie', {
+      chart: {
+        type: 'pie',
+      },
+      title: {
+        text: 'Seenu'
     },
-    title: {
-      text: 'Seenu'
-  },
-    credits: {
-      enabled: false,
-    },
-    tooltip: {
-      headerFormat: `<span class="mb-2">Date: {point.key}</span><br>`,
-      pointFormat: '<span>Amount: {point.y}</span>',
-      useHTML: true,
-    },
-    series: [{
-      name: null,
-      innerSize: '50%',
-      data:[
-        {
-          date:'1/9/2023',
-          name: 'Aug-Int',
-          y:4000
-        },
-        {
-          date:'1/10/2023',
-          name: 'Aug-Int',
-          y:4000
-        },
-        {
-          date:'1/10/2023',
-          name: 'Total amount',
-          y:200000
-        },       
-    ]
-    }],
-  } as any);
-}
+      credits: {
+        enabled: false,
+      },
+      tooltip: {
+        headerFormat: `<span class="mb-2">Date: {point.key}</span><br>`,
+        pointFormat: '<span>Amount: {point.y}</span>',
+        useHTML: true,
+      },
+      series: [{
+        name: null,
+        innerSize: '50%',
+        data:[
+          {
+            date:'1/9/2023',
+            name: 'Aug-Int',
+            y:4000
+          },
+          {
+            date:'1/10/2023',
+            name: 'Aug-Int',
+            y:4000
+          },
+          {
+            date:'1/10/2023',
+            name: 'Total amount',
+            y:200000
+          },       
+      ]
+      }],
+    } as any);
+  }
 }
