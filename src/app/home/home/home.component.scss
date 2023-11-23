@@ -23,3 +23,7 @@
         border-left: 1px solid #fff !important;
     }
 }
+.mat-table-container{
+    max-height: 400px;
+    overflow: auto;
+}

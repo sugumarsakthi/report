@@ -3,7 +3,7 @@
     <div>
         <h2>Type of cost list</h2>
     </div>
-    <div class="my-3 table-container">
+    <div class="my-3 table-container mat-table-container">
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
             
             <ng-container matColumnDef="#">
@@ -30,9 +30,9 @@
             <td mat-footer-cell *matFooterCellDef> {{ totalamount}} </td>   
             </ng-container>
             
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+            <tr mat-footer-row *matFooterRowDef="displayedColumns;  sticky: true"></tr>
              
         </table>
     </div>
@@ -42,7 +42,7 @@
 
     <div class="my-5">
         <div><h2><b>மொத்தம் கடன் :</b></h2></div>
-        <div class="my-3 table-container">
+        <div class="my-3 table-container mat-table-container">
             <table mat-table [dataSource]="allborrows" class="mat-elevation-z8">
                 
                 <ng-container matColumnDef="#">
@@ -74,9 +74,51 @@
                     <td mat-footer-cell *matFooterCellDef>  </td>   
                 </ng-container>
                 
-                <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
-                <tr mat-footer-row *matFooterRowDef="displayedColumns1"></tr>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns1; sticky: true"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns1"></tr>
+                <tr mat-footer-row *matFooterRowDef="displayedColumns1; sticky: true"></tr>
+                 
+            </table>
+        </div>
+    </div>
+
+    <div class="my-5">
+        <div><h2><b>டிசம்பர் மாதம் செலவு:</b></h2></div>
+        <div class="my-3 table-container mat-table-container">
+            <table mat-table [dataSource]="decmonthcost2023" class="mat-elevation-z8">
+                
+                <ng-container matColumnDef="#">
+                    <th mat-header-cell *matHeaderCellDef> # </th>
+                    <td mat-cell *matCellDef="let element; let i = index"> {{i + 1}}</td>
+                    <td mat-footer-cell *matFooterCellDef> </td>
+                </ng-container>
+                
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef> Date </th>
+                    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+                    <td mat-footer-cell *matFooterCellDef></td>
+                </ng-container>
+            
+                <ng-container matColumnDef="personname">
+                    <th mat-header-cell *matHeaderCellDef> Person Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.personname}} </td>
+                    <td mat-footer-cell *matFooterCellDef class="text-end"> Total Amount</td>
+                </ng-container>
+    
+                <ng-container matColumnDef="amount">
+                <th mat-header-cell *matHeaderCellDef> Amount </th>
+                <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+                <td mat-footer-cell *matFooterCellDef> {{ totaldecmonthcost}} </td>   
+                </ng-container>
+                <ng-container matColumnDef="status">
+                    <th mat-header-cell *matHeaderCellDef> Status </th>
+                    <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+                    <td mat-footer-cell *matFooterCellDef>  </td>   
+                </ng-container>
+                
+                <tr mat-header-row *matHeaderRowDef="displayedColumns2; sticky: true"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+                <tr mat-footer-row *matFooterRowDef="displayedColumns2; sticky: true"></tr>
                  
             </table>
         </div>
