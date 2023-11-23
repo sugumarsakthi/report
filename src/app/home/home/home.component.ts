@@ -8,7 +8,14 @@ export interface PeriodicElement {
   date: string;
   amount: number;
 }
+export interface allborrow{
+  date: string;
+  amount: number;
+  personname:string,
+  status:string
+}
 const ELEMENT_DATA: PeriodicElement[] = Globalconstants.alldata.alldatas;
+const allborrows: PeriodicElement[] = Globalconstants.alldata.totalborrows;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,31 +24,19 @@ const ELEMENT_DATA: PeriodicElement[] = Globalconstants.alldata.alldatas;
 export class HomeComponent {
   displayedColumns: string[] = ['#','date','typeofcost','amount'];
   dataSource = ELEMENT_DATA;
+  displayedColumns1: string[] = ['#','date','personname','amount','status'];
+  allborrows = allborrows;
   public totalamount: any;
-  extraColumns = [
-    [
-      {
-        key: 'totalName',
-        colspan: 2,
-        render: (): string => 'Total'
-      },
-      {
-        key: 'totalCost',
-        colspan: 1,
-        render: (): string | null =>
-          this.totalamount
-      }
-    ],   
-  ];
+  public totalborrowamountothers: any;
   ngOnInit() {
-    console.log(this.dataSource.length,"this.dataSource.length");
     this.totalamount = 0;
     for(var i=0; i < this.dataSource.length; i++){
       this.totalamount += this.dataSource[i].amount;
     }
-    console.log(this.totalamount,"this.totalamount");
+  
+    this.totalborrowamountothers = 0;
+    for(var i=0; i < this.allborrows.length; i++){
+      this.totalborrowamountothers += this.allborrows[i].amount;
+    }
   }
-  isExtendedRow = (index: number) => {
-    return index === 5;
-  };
 }
