@@ -1,13 +1,13 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
-            {date: '23-11-2023', amount: 20,typeofcost:'சீனு'},
-            {date: '23-11-2023', amount: 49,typeofcost:'தேநீர்'},
-            {date: '22-11-2023', amount: 59,typeofcost:'தேநீர்'},
-            {date: '22-11-2023', amount: 47,typeofcost:'தேநீர்'},
-            {date: '21-11-2023', amount: 31,typeofcost:'தேநீர்'},
-            {date: '21-11-2023', amount: 58,typeofcost:'தேநீர்'},
-            {date: '20-11-2023', amount: 3000,typeofcost:'மகளிர் குழு'},
+            {date: '23-11-2023', amount: 20,typeofcost:'சீனு',month:"nov",year:"2023"},
+            {date: '23-11-2023', amount: 49,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '22-11-2023', amount: 59,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '22-11-2023', amount: 47,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '21-11-2023', amount: 31,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '21-11-2023', amount: 58,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '20-11-2023', amount: 3000,typeofcost:'மகளிர் குழு',month:"nov",year:"2023"},
         ],
         totalborrows:[
             {date: '01-08-2023', amount: 200000,personname:'சீனு',status:'in-progress'},
