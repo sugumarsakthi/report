@@ -1,0 +1,15 @@
+.profile-left{
+    width: 250px;
+    background-color: #fff;
+    height: 100%;
+}
+.profile-right{
+    width: calc(100% - 250px);
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.profile-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

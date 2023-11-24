@@ -1,8 +1,55 @@
 <!-- <app-seenu></app-seenu> -->
 <div class="main-pages-cotainer">
-
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-5">
+            <div class="home-top-card">
+                <div class="home-top-card-title">
+                        Total Cost of Today (Rs)
+                </div>
+                <div class="home-top-card-amount">
+                    {{todaycosts}}
+            </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-5">
+            <div class="home-top-card">
+                <div class="home-top-card-title">
+                        Total Cost of Current Month (Rs)
+                </div>
+                <div class="home-top-card-amount">
+                    {{totalcostofthismonth}}
+            </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-5">
+            <div class="home-top-card">
+                <div class="home-top-card-title">
+                        Total Cost of Current Year (Rs)
+                </div>
+                <div class="home-top-card-amount">
+                    {{totalcostofthisyear}}
+            </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-5">
+            <div class="home-top-card">
+                <div class="home-top-card-title">
+                        Overall Tea Cost
+                </div>
+                <div class="home-top-card-amount">
+                    {{totalteaamounts}}
+            </div>
+            </div>
+        </div>
+    </div>
+<div class="month-wise-chart mb-5">
+    <div>
+        <div class="total-cost-year">
+            <h2>Total Cost of the Year</h2>
+        </div>
+    </div>
     <div id="bar-chart"></div>
-
+</div>
     <div>
         <h2>Type of cost list</h2>
     </div>

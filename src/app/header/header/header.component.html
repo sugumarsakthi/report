@@ -1,32 +1,31 @@
 <div class="header-container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
         <div class="container-fluid px-0">            
           <a class="navbar-brand ps-2"><img src="assets/images/ss_logo.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse justify-content-end h-100" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 m-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link active" aria-current="page" [routerLink]="['/photos']">photos</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/profile']">Profile</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" [routerLink]="['/seenu']">சீனு</a></li>
-                  <li><a class="dropdown-item" [routerLink]="['/senthil']">செந்தில்</a></li>
-                  <li><a class="dropdown-item" [routerLink]="['/gopi']">கோபி</a></li>
-                  <li><a class="dropdown-item" [routerLink]="['/purusoth']">புருசோத்</a></li>
-                  <li><a class="dropdown-item" [routerLink]="['/soodamani']">சூடாமணி</a></li>
-                  <li><a class="dropdown-item" [routerLink]="['/senthil-arni']">செந்தில் ஆரணி</a></li>
-                </ul>
-              </li>
             </ul>
+            <button mat-button [matMenuTriggerFor]="menu" class="h-100 text-white">Menu</button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item [routerLink]="['/seenu']">சீனு</button>
+              <button mat-menu-item [routerLink]="['/senthil']">செந்தில்</button>
+              <button mat-menu-item [routerLink]="['/gopi']">கோபி</button>
+              <button mat-menu-item [routerLink]="['/purusoth']">புருசோத்</button>
+              <button mat-menu-item [routerLink]="['/soodamani']">சூடாமணி</button>
+              <button mat-menu-item [routerLink]="['/senthil-arni']">செந்தில் ஆரணி</button>
+            </mat-menu>
           </div>
         </div>
       </nav>

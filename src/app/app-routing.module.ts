@@ -8,7 +8,8 @@ import { SeenuComponent } from './seenu/seenu/seenu.component';
 import { SenthilArniComponent } from './senthil-arni/senthil-arni/senthil-arni.component';
 import { SenthilComponent } from './senthil/senthil/senthil.component';
 import { SoodamaniComponent } from './soodamani/soodamani/soodamani.component';
-
+import { ProfileComponent } from './profile/profile.component';
+import { PhotosComponent } from './photos/photos.component';
 const routes: Routes = [
   {
     path:'login',
@@ -45,6 +46,14 @@ const routes: Routes = [
   {
     path:'senthil-arni',
     component:SenthilArniComponent
+  },
+  {
+    path:'profile',
+    component:ProfileComponent
+  },
+  {
+    path:'photos',
+    component:PhotosComponent
   },
 ];
 

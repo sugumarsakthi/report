@@ -1,13 +1,15 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
-            {date: '23-11-2023', amount: 20,typeofcost:'சீனு',month:"nov",year:"2023"},
-            {date: '23-11-2023', amount: 49,typeofcost:'தேநீர்',month:"nov",year:"2023"},
-            {date: '22-11-2023', amount: 59,typeofcost:'தேநீர்',month:"nov",year:"2023"},
-            {date: '22-11-2023', amount: 47,typeofcost:'தேநீர்',month:"nov",year:"2023"},
-            {date: '21-11-2023', amount: 31,typeofcost:'தேநீர்',month:"nov",year:"2023"},
-            {date: '21-11-2023', amount: 58,typeofcost:'தேநீர்',month:"nov",year:"2023"},
-            {date: '20-11-2023', amount: 3000,typeofcost:'மகளிர் குழு',month:"nov",year:"2023"},
+            {date: '2023-11-24', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-24', amount: 43,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-23', amount: 20,typeofcost:'சீனு',month:"nov",year:"2023"},
+            {date: '2023-11-23', amount: 49,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-22', amount: 59,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-22', amount: 47,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-21', amount: 31,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-21', amount: 58,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-20', amount: 3000,typeofcost:'மகளிர் குழு',month:"nov",year:"2023"},
         ],
         totalborrows:[
             {date: '01-08-2023', amount: 200000,personname:'சீனு',status:'in-progress'},

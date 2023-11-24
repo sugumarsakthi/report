@@ -13,6 +13,8 @@ import { SenthilComponent } from './senthil/senthil/senthil.component';
 import { PurusothComponent } from './purusoth/purusoth/purusoth.component';
 import { SenthilArniComponent } from './senthil-arni/senthil-arni/senthil-arni.component';
 import { SoodamaniComponent } from './soodamani/soodamani/soodamani.component';
+import { PhotosComponent } from './photos/photos.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SoodamaniComponent } from './soodamani/soodamani/soodamani.component';
     SenthilComponent,
     PurusothComponent,
     SenthilArniComponent,
-    SoodamaniComponent
+    SoodamaniComponent,
+    PhotosComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
