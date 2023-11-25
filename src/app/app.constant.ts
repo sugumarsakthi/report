@@ -1,6 +1,8 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
+            {date: '2023-11-24', amount: 31,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-24', amount: 110,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-24', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-24', amount: 43,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-23', amount: 20,typeofcost:'சீனு',month:"nov",year:"2023"},
