@@ -26,8 +26,26 @@ a.navbar-brand img{
     border-radius: 50%;
 }
 @media (max-width: 993px){
+    ::ng-deep .cdk-overlay-connected-position-bounding-box,
+    ::ng-deep .cdk-overlay-pane,
+    ::ng-deep .mat-mdc-menu-panel.mat-mdc-menu-panel{ 
+       width: 100%;
+    }
+    ::ng-deep .mat-mdc-menu-panel.mat-mdc-menu-panel{ 
+        background: #000;
+        border-radius: 0px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
     #navbarSupportedContent{
         background-color: #000;
         z-index: 1;
+    }
+    .navbar>.container-fluid{
+        height: auto;
+    }
+    ::ng-deep .mat-mdc-menu-item > button.mat-mdc-menu-item span{
+        color: #fff !important;
     }
 }
