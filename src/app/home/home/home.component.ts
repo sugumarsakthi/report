@@ -134,16 +134,8 @@ export class HomeComponent {
         data: [this.totalteaamounts,0]
     
       }, {
-        name: 'சீனு',
-        data: [83.6, 78.8,]
-    
-      }, {
-        name: 'செந்தில்',
-        data: [48.9, 38.8,]
-    
-      }, {
-        name: 'புருசோத்',
-        data: [42.4, 33.2,]
+        name: 'Others',
+        data: [3000, 0]
     
       }]
     } as any);

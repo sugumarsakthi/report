@@ -1,7 +1,11 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
-            {date: '2023-11-24', amount: 31,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-26', amount: 509,typeofcost:'Meat and Eat',month:"nov",year:"2023"},
+            {date: '2023-11-26', amount: 53,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-26', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-25', amount: 59,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-25', amount: 31,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-24', amount: 110,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-24', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-24', amount: 43,typeofcost:'தேநீர்',month:"nov",year:"2023"},
