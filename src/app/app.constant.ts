@@ -1,6 +1,11 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
+            {date: '2023-11-28', amount: 670,typeofcost:'Electrician',month:"nov",year:"2023"},
+            {date: '2023-11-28', amount: 509,typeofcost:'Hotel',month:"nov",year:"2023"},
+            {date: '2023-11-28', amount: 18,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-28', amount: 60,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-28', amount: 55,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-26', amount: 509,typeofcost:'Meat and Eat',month:"nov",year:"2023"},
             {date: '2023-11-26', amount: 53,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-26', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},

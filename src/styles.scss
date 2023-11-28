@@ -11,8 +11,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .bg-light-blue{
     background-color: #f1f1f9;
 }
-
-
+.text-blue{
+    color: #0c3688;
+}
+.table-cmn-design thead tr th{
+    background-color: #0c3688;
+    color: #f1f1f9;
+    font-weight: 400;
+}
 @media (max-width: 992px){
     .main-pages-cotainer{ 
         padding-right: 2%;

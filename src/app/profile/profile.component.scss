@@ -24,6 +24,8 @@
 }
 .personal-info-lft{
     width: 150px;
+    font-weight:500;
+    font-size: 14px;
 }
 .personal-info-ryt{
     width: calc(100% - 150px);
@@ -33,7 +35,7 @@
         display: flex;
     }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:400px){
     .personal-info-lft{
         width: 100%;
         height: auto;
@@ -42,6 +44,8 @@
         width: 100%;
         height: auto;
     }
+}
+@media screen and (max-width:768px){    
     .profile-left, .profile-right{
         width: 100%;
         height: auto;
