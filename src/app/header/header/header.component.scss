@@ -1,7 +1,12 @@
 .header-container{
     .bg-light{
         background-color: #0c3688 !important;
-        height: 60px;
+        height: 60px;        
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        z-index: 99;
+        top: 0px;
     }
     ul{        
         li{

@@ -1,0 +1,62 @@
+.table-container{
+    overflow-x: auto;
+
+    tr th{
+        background-color: #000;
+        color: #fff;
+    }
+    tr td{
+        background-color: #e5e5e5;
+        color: #000;
+    }
+    tr th,tr td{
+        border: 1px solid #fff;
+    }
+}
+.green-txt{
+    color: green !important;
+}
+.red-txt{
+    color: red !important;
+}
+.borrow-person-details{
+    border: 1px solid #d2d2d2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+    .borrow-person-detail{
+        padding: 16px;
+    }
+    .borrow-person-details-title{
+        color: #0c3688;
+        border-bottom: 1px solid #d2d2d2;
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+.highcharts-container {
+    width:100% !important;
+    height:100% !important;
+}
+.borrow-report-chart{
+    border: 1px solid #d2d2d2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;    
+    height: 100%;
+    .charts-title{
+        color: #0c3688;
+        border-bottom: 1px solid #d2d2d2;
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    ::ng-deep #gopi-chart-pie{
+        padding: 16px;
+        > div{
+            height: 250px !important;
+        }
+    }
+}

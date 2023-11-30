@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +14,8 @@ import { SenthilArniComponent } from './senthil-arni/senthil-arni/senthil-arni.c
 import { SoodamaniComponent } from './soodamani/soodamani/soodamani.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ProfileComponent } from './profile/profile.component';
+import { BorrowsComponent } from './borrows/borrows/borrows.component';
+import { GopiComponent } from './gopi/gopi/gopi.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { ProfileComponent } from './profile/profile.component';
     SenthilArniComponent,
     SoodamaniComponent,
     PhotosComponent,
-    ProfileComponent
+    ProfileComponent,
+    GopiComponent,
+    BorrowsComponent
   ],
   imports: [
     BrowserModule,

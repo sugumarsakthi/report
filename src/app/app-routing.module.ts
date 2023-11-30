@@ -10,6 +10,7 @@ import { SenthilComponent } from './senthil/senthil/senthil.component';
 import { SoodamaniComponent } from './soodamani/soodamani/soodamani.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PhotosComponent } from './photos/photos.component';
+import { BorrowsComponent } from './borrows/borrows/borrows.component';
 const routes: Routes = [
   {
     path:'login',
@@ -24,36 +25,16 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:'seenu',
-    component:SeenuComponent
-  },
-  {
-    path:'senthil',
-    component:SenthilComponent
-  },
-  {
-    path:'gopi',
-    component:GopiComponent
-  },
-  {
-    path:'purusoth',
-    component:PurusothComponent
-  },
-  {
-    path:'soodamani',
-    component:SoodamaniComponent
-  },
-  {
-    path:'senthil-arni',
-    component:SenthilArniComponent
-  },
-  {
     path:'profile',
     component:ProfileComponent
   },
   {
     path:'photos',
     component:PhotosComponent
+  },
+  {
+    path:'borrows',
+    component:BorrowsComponent
   },
 ];
 

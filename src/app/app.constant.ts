@@ -1,6 +1,14 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
+            {date: '2023-11-30', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-30', amount: 49,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-29', amount: 60,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-29', amount: 39,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-29', amount: 49,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-29', amount: 20,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-29', amount: 43,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-11-29', amount: 72,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-28', amount: 670,typeofcost:'Electrician',month:"nov",year:"2023"},
             {date: '2023-11-28', amount: 509,typeofcost:'Hotel',month:"nov",year:"2023"},
             {date: '2023-11-28', amount: 18,typeofcost:'தேநீர்',month:"nov",year:"2023"},
