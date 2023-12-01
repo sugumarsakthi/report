@@ -1,6 +1,14 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
+            {date: '2023-12-01', amount: 10000,typeofcost:'Door',month:"nov",year:"2023"},
+            {date: '2023-12-01', amount: 1900,typeofcost:'Washing Machine Filter',month:"nov",year:"2023"},
+            {date: '2023-12-01', amount: 52000,typeofcost:'Gopi Irumbedu',month:"nov",year:"2023"},
+            {date: '2023-12-01', amount: 30000,typeofcost:'Washing Machine',month:"nov",year:"2023"},
+            {date: '2023-12-01', amount: 5000,typeofcost:'Senthil',month:"nov",year:"2023"},
+            {date: '2023-12-01', amount: 8000,typeofcost:'Seenu',month:"nov",year:"2023"},
+            {date: '2023-12-01', amount: 80,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-12-01', amount: 87,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-30', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-30', amount: 49,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-29', amount: 60,typeofcost:'தேநீர்',month:"nov",year:"2023"},

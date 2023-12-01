@@ -24,6 +24,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: #f1f1f9;
     font-weight: 400;
 }
+.green-txt{
+    color: green !important;
+}
+.red-txt{
+    color: red !important;
+}
 @media (max-width: 992px){
     .main-pages-cotainer{ 
         padding-right: 2%;
@@ -32,3 +38,72 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         padding-bottom: 48px;
     }
 }
+
+
+// ----Borrow Style Start Here----
+.borrow-person-details{
+    border: 1px solid #d2d2d2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+    .borrow-person-detail{
+        padding: 16px;
+    }
+    .borrow-person-details-title{
+        color: #fff;
+        border-bottom: 1px solid #e7282c !important;
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #e7282c;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+.cmnchartstyle{
+    padding: 16px;
+    .highcharts-container {
+        width:100% !important;
+        height:100% !important;
+    }
+}
+.borrow-report-chart{
+    border: 1px solid #d2d2d2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;    
+    height: 100%;
+    .charts-title{
+        color: #fff;
+        border-bottom: 1px solid #e7282c;
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #e7282c;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    ::ng-deep #gopi-chart-pie{
+        padding: 16px;
+        > div{
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+}
+.borrowtblcmndesign{
+    overflow-x: auto;
+    tr th{
+        background-color: #e7282c !important;
+        color: #fff !important;
+    }
+    tr td{
+        background-color: #e5e5e5 !important;
+        color: #000 !important;
+    }
+    tr th,tr td{
+        border: 1px solid #fff !important;
+    }
+}
+// ----Borrow Style End Here----
