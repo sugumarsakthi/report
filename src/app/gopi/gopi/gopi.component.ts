@@ -1,24 +1,22 @@
 import { Component } from '@angular/core';
 import * as Highcharts from 'highcharts';
-export interface PeriodicElement {
+import { Globalconstants } from 'src/app/app.constant';
+
+export interface gopinterest{
   date: string;
-  position: number;
   amount: number;
-  status: string;
+  status:string
 }
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, date: '1-10-2023', amount: 1500, status: 'Done'},
-  {position: 2, date: '1-11-2023', amount: 1500, status: 'Done'},
-  {position: 3, date: '30-11-2023', amount: 1500, status: 'Done'},
-];
+const GopInterests: gopinterest[] = Globalconstants.allpersonalinterest.Gopi;
+
 @Component({
   selector: 'app-gopi',
   templateUrl: './gopi.component.html',
   styleUrls: ['./gopi.component.scss']
 })
 export class GopiComponent {
-displayedColumns: string[] = ['position', 'date', 'amount', 'status'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['#','date','amount','status'];
+  GopiInt = GopInterests;
   ngOnInit(){
     this.createGopibarChart();
   }

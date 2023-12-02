@@ -1,25 +1,21 @@
 import { Component } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import { Globalconstants } from 'src/app/app.constant';
 
-export interface PeriodicElement {
+export interface SenthilArninterest{
   date: string;
-  position: number;
   amount: number;
-  status: string;
+  status:string
 }
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, date: '1-11-2023', amount: 3000, status: 'Done'},
-  {position: 2, date: '1-12-2023', amount: 2000, status: 'Done'},
-];
-
+const SenthilArninterests: SenthilArninterest[] = Globalconstants.allpersonalinterest.SenthilArni;
 @Component({
   selector: 'app-senthil-arni',
   templateUrl: './senthil-arni.component.html',
   styleUrls: ['./senthil-arni.component.scss']
 })
 export class SenthilArniComponent {
-  displayedColumns: string[] = ['position', 'date', 'amount', 'status'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['#','date','amount','status'];
+  SenthilArniInt = SenthilArninterests;
   ngOnInit(){
     this.createSenthilArnibarChart();
   }

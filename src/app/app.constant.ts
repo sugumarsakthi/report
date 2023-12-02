@@ -63,4 +63,25 @@ export class Globalconstants{
             {date: '', amount: 10000,personname:'சீட்டு',status:'in-progress'},
         ],
     }
+
+    public static allpersonalinterest:any ={
+        Gopi:[
+            {date: '01-12-2023', amount: 1500,status:'Done'},
+            {date: '01-11-2023', amount: 1500,status:'Done'},
+            {date: '01-10-2023', amount: 1500,status:'Done'},
+        ],
+        Senthil:[
+            {date: '01-12-2023', amount: 2500,status:'Done'},
+            {date: '01-11-2023', amount: 2500,status:'Done'},
+        ],
+        SenthilArni:[
+            {date: '01-12-2023', amount: 2000,status:'Done'},
+            {date: '01-11-2023', amount: 3000,status:'Done'},
+        ],
+        Purusoth:[
+            {date: '01-12-2023', amount: 2000,status:'Done'},
+            {date: '01-11-2023', amount: 2000,status:'Done'},
+            {date: '01-10-2023', amount: 2000,status:'Done'},
+        ],
+    }
 }

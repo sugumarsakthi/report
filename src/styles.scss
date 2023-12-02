@@ -100,7 +100,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
     tr td{
         background-color: #e5e5e5 !important;
-        color: #000 !important;
+        color: #000 !important;      
+    }
+    .green-txt {
+        color: green !important;
     }
     tr th,tr td{
         border: 1px solid #fff !important;

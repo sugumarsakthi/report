@@ -68,11 +68,12 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
+            margin-right: 8px;
         }
     }
     button.active{
-        background-color: #0c3688 !important;
-        color: #ffe600;
+        background-color: #e7282c !important;
+        color: #fff;
     }
 }
 @media screen and (min-width:769px){

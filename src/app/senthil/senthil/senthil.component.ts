@@ -1,24 +1,22 @@
 import { Component } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import { Globalconstants } from 'src/app/app.constant';
 
-export interface PeriodicElement {
+
+export interface senthilinterest{
   date: string;
-  position: number;
   amount: number;
-  status: string;
+  status:string
 }
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, date: '1-11-2023', amount: 2500, status: 'Done'},
-  {position: 2, date: '1-12-2023', amount: 2500, status: 'Done'},
-];
+const senthilinterests: senthilinterest[] = Globalconstants.allpersonalinterest.Senthil;
 @Component({
   selector: 'app-senthil',
   templateUrl: './senthil.component.html',
   styleUrls: ['./senthil.component.scss']
 })
 export class SenthilComponent {
-  displayedColumns: string[] = ['position', 'date', 'amount', 'status'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['#','date','amount','status'];
+  SenthilInt = senthilinterests;
   ngOnInit(){
     this.createSenthilbarChart();
   }
