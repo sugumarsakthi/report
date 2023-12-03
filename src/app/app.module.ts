@@ -16,7 +16,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BorrowsComponent } from './borrows/borrows/borrows.component';
 import { GopiComponent } from './gopi/gopi/gopi.component';
-
+import { DevikapuramComponent } from './devikapuram/devikapuram/devikapuram.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,8 @@ import { GopiComponent } from './gopi/gopi/gopi.component';
     PhotosComponent,
     ProfileComponent,
     GopiComponent,
-    BorrowsComponent
+    BorrowsComponent,
+    DevikapuramComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,19 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
-            {date: '2023-12-01', amount: 10000,typeofcost:'Door',month:"nov",year:"2023"},
-            {date: '2023-12-01', amount: 1900,typeofcost:'Washing Machine Filter',month:"nov",year:"2023"},
-            {date: '2023-12-01', amount: 52000,typeofcost:'Gopi Irumbedu',month:"nov",year:"2023"},
-            {date: '2023-12-01', amount: 30000,typeofcost:'Washing Machine',month:"nov",year:"2023"},
-            {date: '2023-12-01', amount: 5000,typeofcost:'Senthil',month:"nov",year:"2023"},
-            {date: '2023-12-01', amount: 8000,typeofcost:'Seenu',month:"nov",year:"2023"},
-            {date: '2023-12-01', amount: 80,typeofcost:'தேநீர்',month:"nov",year:"2023"},
-            {date: '2023-12-01', amount: 87,typeofcost:'தேநீர்',month:"nov",year:"2023"},
+            {date: '2023-12-03', amount: 43,typeofcost:'தேநீர்',month:"Dec",year:"2023"},
+            {date: '2023-12-02', amount: 120,typeofcost:'தேநீர்',month:"Dec",year:"2023"},
+            {date: '2023-12-02', amount: 87,typeofcost:'தேநீர்',month:"Dec",year:"2023"},
+            {date: '2023-12-02', amount: 87,typeofcost:'தேநீர்',month:"Dec",year:"2023"},
+            {date: '2023-12-02', amount: 49,typeofcost:'தேநீர்',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 10000,typeofcost:'Door',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 1900,typeofcost:'Washing Machine Filter',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 52000,typeofcost:'Gopi Irumbedu',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 30000,typeofcost:'Washing Machine',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 5000,typeofcost:'Senthil',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 8000,typeofcost:'Seenu',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 80,typeofcost:'தேநீர்',month:"Dec",year:"2023"},
+            {date: '2023-12-01', amount: 87,typeofcost:'தேநீர்',month:"Dec",year:"2023"},
             {date: '2023-11-30', amount: 19,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-30', amount: 49,typeofcost:'தேநீர்',month:"nov",year:"2023"},
             {date: '2023-11-29', amount: 60,typeofcost:'தேநீர்',month:"nov",year:"2023"},
@@ -82,6 +87,20 @@ export class Globalconstants{
             {date: '01-12-2023', amount: 2000,status:'Done'},
             {date: '01-11-2023', amount: 2000,status:'Done'},
             {date: '01-10-2023', amount: 2000,status:'Done'},
+        ],
+        Devikapuram:[
+            {date: '01-12-2023', amount: 8000,status:'Done'},
+            {date: '01-11-2023', amount: 8000,status:'Done'},
+            {date: '01-10-2023', amount: 8000,status:'Done'},
+        ],
+        Soodamani:[
+            {date: '01-12-2023', amount: 200,status:'Done'},
+            {date: '01-11-2023', amount: 200,status:'Done'},
+        ],
+        Seenu:[
+            {date: '01-12-2023', amount: 4000,status:'Done'},
+            {date: '01-11-2023', amount: 4000,status:'Done'},
+            {date: '01-10-2023', amount: 4000,status:'Done'},
         ],
     }
 }
