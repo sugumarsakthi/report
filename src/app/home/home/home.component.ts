@@ -14,8 +14,6 @@ export interface allborrow{
   status:string
 }
 const ELEMENT_DATA: PeriodicElement[] = Globalconstants.alldata.alldatas;
-const allborrows: PeriodicElement[] = Globalconstants.alldata.totalborrows;
-const decmonthcost2023: PeriodicElement[] = Globalconstants.alldata.decmonthcost2023;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -24,16 +22,16 @@ const decmonthcost2023: PeriodicElement[] = Globalconstants.alldata.decmonthcost
 export class HomeComponent {
   displayedColumns: string[] = ['#','date','typeofcost','amount'];
   dataSource = ELEMENT_DATA;
-  displayedColumns1: string[] = ['#','date','personname','amount','status'];
-  allborrows = allborrows;
-  displayedColumns2: string[] = ['#','date','personname','amount','status'];
-  decmonthcost2023 = decmonthcost2023;
-  public totalamount: any;              // Type of cost list total
-  public totalborrowamountothers: any;  //மொத்தம் கடன் 
-  public totaldecmonthcost: any;        //bar chart decmonth
-  public totalteaamount:any;            //bar chart decmonth tea
-  totalteaamounts: any;                 //bar chart decmonth
-  public totaltea = Globalconstants.alldata.alldatas; //bar chart decmonth
+  public overallteacosts:any;            //bar chart OVerall tea cost
+  public totalnovteaamount:any;            //bar chart novmonth tea cost
+  totalnovteaamounts: any;                 //bar chart novmonth tea cost
+  totalnovotheramount: any;                 //bar chart novmonth other cost
+  totalnovotheramounts: any;                 //bar chart novmonth other cost
+  totaldecteaamount: any;                 //bar chart decmonth tea cost
+  totaldecteaamounts: any;                 //bar chart decmonth tea cost
+  totaldecotheramount: any;                 //bar chart decmonth other cost
+  totaldecotheramounts: any;                 //bar chart decmonth other cost
+  public fulldata = Globalconstants.alldata.alldatas; //bar chart decmonth
   public todaycost = Globalconstants.alldata.alldatas; //header section today cost
   todaycosts: any;  //header section today cost
   todaydate: any;
@@ -45,34 +43,43 @@ export class HomeComponent {
   totalcostofthismonth: any; //header section current month cost
   totalcostofthisyear: any; //header section current year cost
   overallteacost: any; //header section current year cost
+  teacostofcurrentmonth: any; //tea cost of current month
   ngOnInit() {
-
-    this.totalamount = 0;  // Type of cost list total
-    for(var i=0; i < this.dataSource.length; i++){
-      this.totalamount += this.dataSource[i].amount;
+    this.totalnovteaamount = this.dataSource;
+    this.totalnovteaamounts = 0;   //bar chart novmonth
+    for(var i=0; i < this.fulldata.length; i++){
+      if(this.fulldata[i].typeofcost == "தேநீர்" && this.fulldata[i].month == "nov"){
+        this.totalnovteaamounts += this.fulldata[i].amount;
+      }
     }
-  
-    this.totalborrowamountothers = 0;  // மொத்தம் கடன் :
-    for(var i=0; i < this.allborrows.length; i++){
-      this.totalborrowamountothers += this.allborrows[i].amount;
+    this.overallteacosts = 0;
+    for(var i=0; i < this.fulldata.length; i++){
+      if(this.fulldata[i].typeofcost == "தேநீர்"){
+        this.overallteacosts += this.fulldata[i].amount;
+      }
     }
-
-
-    this.totaldecmonthcost = 0;  //bar chart decmonth
-    for(var i=0; i < this.decmonthcost2023.length; i++){
-      this.totaldecmonthcost += this.decmonthcost2023[i].amount;
+    this.totalnovotheramounts = 0;
+    for(var i=0; i < this.fulldata.length; i++){
+      if(this.fulldata[i].typeofcost != "தேநீர்" && this.fulldata[i].month == "nov"){
+        this.totalnovotheramounts += this.fulldata[i].amount;
+      }
     }
-
-    this.totalteaamount = this.dataSource;
-    this.totalteaamounts = 0;   //bar chart decmonth
-    for(var i=0; i < this.totaltea.length; i++){
-      if(this.totaltea[i].typeofcost == "தேநீர்" && this.totaltea[i].month == "nov"){
-        this.totalteaamounts += this.totaltea[i].amount;
+    this.totaldecteaamounts = 0;   //bar chart decmonth
+    for(var i=0; i < this.fulldata.length; i++){
+      if(this.fulldata[i].typeofcost == "தேநீர்" && this.fulldata[i].month == "dec"){
+        this.totaldecteaamounts += this.fulldata[i].amount;
+      }
+    }
+    this.totaldecotheramounts = 0;
+    for(var i=0; i < this.fulldata.length; i++){
+      if(this.fulldata[i].typeofcost != "தேநீர்" && this.fulldata[i].month == "dec"){
+        this.totaldecotheramounts += this.fulldata[i].amount;
       }
     }
     this.todaycosts=0;  //header section today cost
     this.totalcostofthismonth = 0; //header section current month cost
     this.totalcostofthisyear = 0; //header section current month cost
+    this.teacostofcurrentmonth = 0; // tea cost of current month
     this.overallteacost = 0; //Over all tea cost
     for(var i=0; i < this.todaycost.length; i++){
       this.arraydate = new Date(this.todaycost[i].date).getDate();
@@ -86,6 +93,11 @@ export class HomeComponent {
       }
       if( this.arrayyear == this.todayyear && this.arraymonth == this.todaymonth){
         this.totalcostofthismonth += this.todaycost[i].amount;
+      }
+      if( this.arrayyear == this.todayyear && this.arraymonth == this.todaymonth){
+        if(this.fulldata[i].typeofcost == "தேநீர்"){
+          this.teacostofcurrentmonth += this.todaycost[i].amount;
+        }
       }
       if( this.arrayyear == this.todayyear){
         this.totalcostofthisyear += this.todaycost[i].amount;
@@ -131,11 +143,11 @@ export class HomeComponent {
       },
       series: [{
         name: 'தேநீர்',
-        data: [this.totalteaamounts,0]
+        data: [this.totalnovteaamounts,this.totaldecteaamounts]
     
       }, {
         name: 'Others',
-        data: [3000, 0]
+        data: [this.totalnovotheramounts, this.totaldecotheramounts]
     
       }]
     } as any);

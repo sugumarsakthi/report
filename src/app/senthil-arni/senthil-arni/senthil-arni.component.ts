@@ -29,8 +29,7 @@ export class SenthilArniComponent {
       },     
       xAxis: {
         categories: [
-          'Nov',
-          'Dec'
+          'Report'
         ],
         crosshair: true
       },
@@ -63,10 +62,10 @@ export class SenthilArniComponent {
       },
       series: [{
         name: 'Interest',
-        data: [4500]    
+        data: [5000]    
       }, {
         name: 'Total Amount',
-        data: ['1,50,000']
+        data: [100000]
     
       }]
     } as any);

@@ -30,8 +30,7 @@ export class SenthilComponent {
       },     
       xAxis: {
         categories: [
-          'Nov',
-          'Dec'
+         'Report'
         ],
         crosshair: true
       },
@@ -64,10 +63,10 @@ export class SenthilComponent {
       },
       series: [{
         name: 'Interest',
-        data: [4500]    
+        data: [5000]    
       }, {
         name: 'Total Amount',
-        data: ['1,50,000']
+        data: [150000]
     
       }]
     } as any);
