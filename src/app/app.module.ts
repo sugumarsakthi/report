@@ -17,6 +17,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { BorrowsComponent } from './borrows/borrows/borrows.component';
 import { GopiComponent } from './gopi/gopi/gopi.component';
 import { DevikapuramComponent } from './devikapuram/devikapuram/devikapuram.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,9 @@ import { DevikapuramComponent } from './devikapuram/devikapuram/devikapuram.comp
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularmaterialModule
+    AngularmaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

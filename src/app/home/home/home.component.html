@@ -1,6 +1,40 @@
 <!-- <app-seenu></app-seenu> -->
 <div class="container-body">
     <div class="main-pages-cotainer">
+        <div class="home-top-card mb-5">
+            <div class="row align-items-center py-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <mat-form-field>
+                        <mat-label>Type of Cost</mat-label>
+                        <mat-select>
+                        <mat-option value="option1">Tea</mat-option>
+                        <mat-option value="option2">Others</mat-option>
+                        </mat-select>
+                        <mat-error>Please select type of cost</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Amount</mat-label>
+                        <input matInput #message maxlength="256" placeholder="Enter a amount">
+                        <mat-error>Please enter amount</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                        <mat-error>Please select a date</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 text-end">
+                    <button mat-raised-button color="primary">Add</button>
+                </div>
+
+            </div>
+        </div>
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-5">
                 <div class="home-top-card">
@@ -53,14 +87,14 @@
                 </div>
             </div>
         </div>
-    <div class="month-wise-chart mb-5">
-        <div>
-            <div class="total-cost-year">
-                <h2>Total Cost of the Year</h2>
+        <div class="month-wise-chart mb-5">
+            <div>
+                <div class="total-cost-year">
+                    <h2>Total Cost of the Year</h2>
+                </div>
             </div>
+            <div id="bar-chart"></div>
         </div>
-        <div id="bar-chart"></div>
-    </div>
 
     </div>
 </div>

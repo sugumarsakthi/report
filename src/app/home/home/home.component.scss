@@ -54,3 +54,27 @@ html,body{
 #bar-chart{
     padding-top: 36px;
 }
+
+::ng-deep .home-top-card .mat-mdc-form-field{
+    width: 100%;
+    max-width: 280px;
+    margin: 12px 0px;
+    .mdc-text-field{
+        border: 1px solid #d2d2d2;
+    }
+    .mdc-line-ripple::before {
+        border-bottom-color: transparent;
+    }
+    .mdc-text-field:hover .mdc-line-ripple::before {
+        border-bottom-color: transparent;
+    }
+    .mat-mdc-form-field-subscript-wrapper{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-pages-cotainer{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

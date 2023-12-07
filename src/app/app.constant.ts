@@ -1,10 +1,12 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
+            {date: '2023-12-07', amount: 51,typeofcost:'Chicken',month:"dec",year:"2023"},
+            {date: '2023-12-06', amount: 30,typeofcost:'Chicken',month:"dec",year:"2023"},
+            {date: '2023-12-06', amount: 77,typeofcost:'தேநீர்',month:"dec",year:"2023"},
             {date: '2023-12-05', amount: 19000,typeofcost:'Moneyview Loan',month:"dec",year:"2023"},
             {date: '2023-12-05', amount: 5700,typeofcost:'True balance Loan',month:"dec",year:"2023"},
             {date: '2023-12-05', amount: 3000,typeofcost:'heaset,charger',month:"dec",year:"2023"},
-            {date: '2023-12-05', amount: 77,typeofcost:'தேநீர்',month:"dec",year:"2023"},
             {date: '2023-12-05', amount: 31,typeofcost:'தேநீர்',month:"dec",year:"2023"},
             {date: '2023-12-05', amount: 69,typeofcost:'தேநீர்',month:"dec",year:"2023"},
             {date: '2023-12-05', amount: 92,typeofcost:'தேநீர்',month:"dec",year:"2023"},
