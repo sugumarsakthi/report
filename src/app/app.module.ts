@@ -18,6 +18,8 @@ import { BorrowsComponent } from './borrows/borrows/borrows.component';
 import { GopiComponent } from './gopi/gopi/gopi.component';
 import { DevikapuramComponent } from './devikapuram/devikapuram/devikapuram.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form/template-driven-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     ProfileComponent,
     GopiComponent,
     BorrowsComponent,
-    DevikapuramComponent
+    DevikapuramComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,

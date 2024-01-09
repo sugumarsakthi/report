@@ -1,7 +1,8 @@
 export class Globalconstants{
     public static alldata:any = {
         alldatas:[
-            {date: '2023-12-07', amount: 51,typeofcost:'Chicken',month:"dec",year:"2023"},
+            {date: '2023-12-07', amount: 37,typeofcost:'தேநீர்',month:"dec",year:"2023"},
+            {date: '2023-12-07', amount: 51,typeofcost:'தேநீர்',month:"dec",year:"2023"},
             {date: '2023-12-06', amount: 30,typeofcost:'Chicken',month:"dec",year:"2023"},
             {date: '2023-12-06', amount: 77,typeofcost:'தேநீர்',month:"dec",year:"2023"},
             {date: '2023-12-05', amount: 19000,typeofcost:'Moneyview Loan',month:"dec",year:"2023"},
@@ -82,34 +83,40 @@ export class Globalconstants{
     }
 
     public static allpersonalinterest:any ={
-        Gopi:[
+        Gopi:[           
             {date: '01-12-2023', amount: 1500,status:'Done'},
             {date: '01-11-2023', amount: 1500,status:'Done'},
             {date: '01-10-2023', amount: 1500,status:'Done'},
         ],
         Senthil:[
+            {date: '06-01-2024', amount: 2500,status:'Done'},
             {date: '01-12-2023', amount: 2500,status:'Done'},
             {date: '01-11-2023', amount: 2500,status:'Done'},
         ],
         SenthilArni:[
+            {date: '01-01-2024', amount: 2000,status:'Done'},
             {date: '01-12-2023', amount: 2000,status:'Done'},
             {date: '01-11-2023', amount: 3000,status:'Done'},
         ],
         Purusoth:[
+            {date: '01-01-2024', amount: 2000,status:'Done'},
             {date: '01-12-2023', amount: 2000,status:'Done'},
             {date: '01-11-2023', amount: 2000,status:'Done'},
             {date: '01-10-2023', amount: 2000,status:'Done'},
         ],
         Devikapuram:[
+            {date: '01-01-2024', amount: 8000,status:'Done'},
             {date: '01-12-2023', amount: 8000,status:'Done'},
             {date: '01-11-2023', amount: 8000,status:'Done'},
             {date: '01-10-2023', amount: 8000,status:'Done'},
         ],
         Soodamani:[
+            {date: '01-01-2024', amount: 200,status:'In Progress'},
             {date: '01-12-2023', amount: 200,status:'In Progress'},
             {date: '01-11-2023', amount: 200,status:'In Progress'},
         ],
         Seenu:[
+            {date: '01-01-2024', amount: 4000,status:'In Progress'},
             {date: '01-12-2023', amount: 4000,status:'Done'},
             {date: '01-11-2023', amount: 4000,status:'Done'},
             {date: '01-10-2023', amount: 4000,status:'Done'},

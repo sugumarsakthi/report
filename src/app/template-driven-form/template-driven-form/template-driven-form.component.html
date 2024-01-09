@@ -1,0 +1,37 @@
+<div class="container-body">
+    <div class="bg-light-blue">
+        <H3>Template Driven Form</H3>
+        <div>
+            <form #templateForm="ngForm" (submit)="onSubmit(templateForm)">
+                <div class="mb-3">
+                  <label for="firstname" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstname" ngModel>
+                </div>
+                <div class="mb-3">
+                  <label for="lastname" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastname" ngModel>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" ngModel>
+                </div>
+                <div class="mb-3">
+                  <label for="gender" class="form-label">Gender</label>
+                  <input type="radio" class="form-control" id="gender" value="male" ngModel>Male
+                  <input type="radio" class="form-control" id="gender" value="female" ngModel>Female
+                  <input type="radio" class="form-control" id="gender" value="transgender" ngModel>Transgender
+                </div>
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-control" name="country" id="country" ngModel>
+                        <option>Select</option>
+                        <option [ngValue] = "coutry.id" *ngFor = "let coutry of countrylist">
+                            {{coutry.name}}
+                        </option>
+                    </select>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</div>

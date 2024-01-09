@@ -11,6 +11,7 @@ import { SoodamaniComponent } from './soodamani/soodamani/soodamani.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PhotosComponent } from './photos/photos.component';
 import { BorrowsComponent } from './borrows/borrows/borrows.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form/template-driven-form.component';
 const routes: Routes = [
   {
     path:'login',
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path:'borrows',
     component:BorrowsComponent
+  },
+  {
+    path:'template-form',
+    component:TemplateDrivenFormComponent
   },
 ];
 
