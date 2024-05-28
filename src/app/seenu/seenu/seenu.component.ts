@@ -17,7 +17,31 @@ const Seenuinterests: Seenuinterest[] = Globalconstants.allpersonalinterest.Seen
 export class SeenuComponent {
   displayedColumns: string[] = ['#','date','amount','status'];
   Seenuint = Seenuinterests;
+  public interestamount:any;  
+  interestamounts:any;
+  pendingamount:any;
+  totalintamount:any; 
   ngOnInit(){
+    this.interestamount = this.Seenuint;
+    this.interestamounts = 0; 
+    this.pendingamount = 0;   
+    this.totalintamount = 0;   
+    for(var i=0; i < this.interestamount.length; i++){   
+      if(this.interestamount[i].status == "Done"){
+        this.interestamounts += this.interestamount[i].amount;
+        console.log(this.interestamounts, "interesttotalamount");
+      }
+    }
+    for(var i=0; i < this.interestamount.length; i++){   
+      if(this.interestamount[i].status == "In Progress"){
+        this.pendingamount += this.interestamount[i].amount;
+        console.log(this.pendingamount, "interesttotalamount");
+      }
+    }
+    for(var i=0; i < this.interestamount.length; i++){   
+        this.totalintamount += this.interestamount[i].amount;
+        console.log(this.totalintamount, "interesttotalamount");
+    }
     this.createSeenubarChart();
   }
   createSeenubarChart(){

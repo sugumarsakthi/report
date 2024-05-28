@@ -17,7 +17,31 @@ const GopInterests: gopinterest[] = Globalconstants.allpersonalinterest.Gopi;
 export class GopiComponent {
   displayedColumns: string[] = ['#','date','amount','status'];
   GopiInt = GopInterests;
+  public interestamount:any;  
+  interestamounts:any;
+  pendingamount:any;
+  totalintamount:any; 
   ngOnInit(){
+    this.interestamount = this.GopiInt;
+    this.interestamounts = 0; 
+    this.pendingamount = 0;   
+    this.totalintamount = 0;   
+    for(var i=0; i < this.interestamount.length; i++){   
+      if(this.interestamount[i].status == "Done"){
+        this.interestamounts += this.interestamount[i].amount;
+        console.log(this.interestamounts, "interesttotalamount");
+      }
+    }
+    for(var i=0; i < this.interestamount.length; i++){   
+      if(this.interestamount[i].status == "In Progress"){
+        this.pendingamount += this.interestamount[i].amount;
+        console.log(this.pendingamount, "interesttotalamount");
+      }
+    }
+    for(var i=0; i < this.interestamount.length; i++){   
+        this.totalintamount += this.interestamount[i].amount;
+        console.log(this.totalintamount, "interesttotalamount");
+    }
     this.createGopibarChart();
   }
   createGopibarChart(){

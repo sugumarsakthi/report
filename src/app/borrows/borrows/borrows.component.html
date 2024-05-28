@@ -4,29 +4,29 @@
             <div class="borrow-left">
                 <div class="mt-4 px-3"><h4><b>Person List</b></h4></div>
                 <nav class="borrowlist">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-gopi-tab" data-bs-toggle="tab" data-bs-target="#nav-gopi" type="button" role="tab" aria-controls="nav-gopi" aria-selected="true">
-                            <img src="assets/images/gopi.png"> கோபி
-                        </button>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">          
+                        <button class="nav-link" id="nav-devikapuram-tab" data-bs-toggle="tab" data-bs-target="#nav-devikapuram" type="button" role="tab" aria-controls="nav-devikapuram" aria-selected="false">
+                            <img src="assets/images/no-profile.png"> தேவிகாபுரம்
+                        </button>         
+                        <button class="nav-link" id="nav-seenu-tab" data-bs-toggle="tab" data-bs-target="#nav-seenu" type="button" role="tab" aria-controls="nav-seenu" aria-selected="false">
+                            <img src="assets/images/seenu.png"> சீனு
+                        </button>    
+                       
                         <button class="nav-link" id="nav-senthil-tab" data-bs-toggle="tab" data-bs-target="#nav-senthil" type="button" role="tab" aria-controls="nav-senthil" aria-selected="false">
                             <img src="assets/images/sugumar-profile.jpg"> செந்தில்
-                        </button>
-                        <button class="nav-link" id="nav-senthil-arni-tab" data-bs-toggle="tab" data-bs-target="#nav-senthil-arni" type="button" role="tab" aria-controls="nav-senthil-arni" aria-selected="false">
+                        </button>  
+                        <button class="nav-link active" id="nav-senthil-arni-tab" data-bs-toggle="tab" data-bs-target="#nav-senthil-arni" type="button" role="tab" aria-controls="nav-senthil-arni" aria-selected="false">
                             <img src="assets/images/senthil-arni.png"> செந்தில் ஆரணி
-                        </button>
+                        </button>                      
                         <button class="nav-link" id="nav-purusoth-tab" data-bs-toggle="tab" data-bs-target="#nav-purusoth" type="button" role="tab" aria-controls="nav-purusoth" aria-selected="false">
                             <img src="assets/images/suresh.png"> புருசோத்
                         </button>
-                        <button class="nav-link" id="nav-devikapuram-tab" data-bs-toggle="tab" data-bs-target="#nav-devikapuram" type="button" role="tab" aria-controls="nav-devikapuram" aria-selected="false">
-                            <img src="assets/images/no-profile.png"> தேவிகாபுரம்
+                        <button class="nav-link" id="nav-gopi-tab" data-bs-toggle="tab" data-bs-target="#nav-gopi" type="button" role="tab" aria-controls="nav-gopi" aria-selected="true">
+                            <img src="assets/images/gopi.png"> கோபி
                         </button>
                         <button class="nav-link" id="nav-soodamani-tab" data-bs-toggle="tab" data-bs-target="#nav-soodamani" type="button" role="tab" aria-controls="nav-soodamani" aria-selected="false">
                             <img src="assets/images/no-profile.png"> சூடாமணி
                         </button>
-                        <button class="nav-link" id="nav-seenu-tab" data-bs-toggle="tab" data-bs-target="#nav-seenu" type="button" role="tab" aria-controls="nav-seenu" aria-selected="false">
-                            <img src="assets/images/seenu.png"> சீனு
-                        </button>
-                    
                     </div>
                   </nav>
                 <div>
@@ -34,34 +34,37 @@
                 
             </div>
             <div class="borrow-right">
-                  <div class="tab-content borrow-tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-gopi" role="tabpanel" aria-labelledby="nav-gopi-tab">
-                        <div class="borrow-person-name"><img src="assets/images/gopi.png"> கோபி</div>
-                        <app-gopi></app-gopi>
-                    </div>
-                    <div class="tab-pane fade" id="nav-senthil" role="tabpanel" aria-labelledby="nav-senthil-tab">
-                        <div class="borrow-person-name"><img src="assets/images/sugumar-profile.jpg"> செந்தில்</div>
-                        <app-senthil></app-senthil>
-                    </div>
-                    <div class="tab-pane fade" id="nav-senthil-arni" role="tabpanel" aria-labelledby="nav-senthil-arni-tab">
-                        <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/senthil-arni.png"> செந்தில் ஆரணி</div>
-                        <app-senthil-arni></app-senthil-arni>
-                    </div>
-                    <div class="tab-pane fade" id="nav-purusoth" role="tabpanel" aria-labelledby="nav-purusoth-tab">
-                        <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/suresh.png"> புருசோத்</div>
-                        <app-purusoth></app-purusoth>
-                    </div>
+                  <div class="tab-content borrow-tab-content" id="nav-tabContent">  
                     <div class="tab-pane fade" id="nav-devikapuram" role="tabpanel" aria-labelledby="nav-devikapuram-tab">
                         <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/no-profile.png"> தேவிகாபுரம்</div>
                         <app-devikapuram></app-devikapuram>
                     </div>
+                    <div class="tab-pane fade" id="nav-seenu" role="tabpanel" aria-labelledby="nav-seenu-tab">
+                        <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/seenu.png"> சீனு</div>
+                        <app-seenu></app-seenu>
+                    </div>
+                    <div class="tab-pane fade" id="nav-senthil" role="tabpanel" aria-labelledby="nav-senthil-tab">
+                        <div class="borrow-person-name"><img src="assets/images/sugumar-profile.jpg"> செந்தில்</div>
+                        <app-senthil></app-senthil>
+                    </div>     
+                    <div class="tab-pane show active fade" id="nav-senthil-arni" role="tabpanel" aria-labelledby="nav-senthil-arni-tab">
+                        <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/senthil-arni.png"> செந்தில் ஆரணி</div>
+                        <app-senthil-arni></app-senthil-arni>
+                    </div>                  
+                                  
+                    <div class="tab-pane fade" id="nav-purusoth" role="tabpanel" aria-labelledby="nav-purusoth-tab">
+                        <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/suresh.png"> புருசோத்</div>
+                        <app-purusoth></app-purusoth>
+                    </div>
+                    
                     <div class="tab-pane fade" id="nav-soodamani" role="tabpanel" aria-labelledby="nav-soodamani-tab">
                         <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/no-profile.png"> சூடாமணி</div>
                         <app-soodamani></app-soodamani>
                     </div>
-                    <div class="tab-pane fade" id="nav-seenu" role="tabpanel" aria-labelledby="nav-seenu-tab">
-                        <div class="borrow-person-name d-flex align-items-center"><img class="pe-2" src="assets/images/seenu.png"> சீனு</div>
-                        <app-seenu></app-seenu>
+                   
+                    <div class="tab-pane fade" id="nav-gopi" role="tabpanel" aria-labelledby="nav-gopi-tab">
+                        <div class="borrow-person-name"><img src="assets/images/gopi.png"> கோபி</div>
+                        <app-gopi></app-gopi>
                     </div>
                   </div>
             </div>
