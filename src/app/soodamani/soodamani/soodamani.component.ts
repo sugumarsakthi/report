@@ -85,7 +85,7 @@ export class SoodamaniComponent {
       },
       series: [{
         name: 'Interest',
-        data: [400]    
+        data: [3800]    
       }, {
         name: 'Total Amount',
         data: [10000]

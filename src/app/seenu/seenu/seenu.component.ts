@@ -87,7 +87,7 @@ export class SeenuComponent {
       },
       series: [{
         name: 'Interest',
-        data: [12000]    
+        data: [60000]    
       }, {
         name: 'Total Amount',
         data: [200000]

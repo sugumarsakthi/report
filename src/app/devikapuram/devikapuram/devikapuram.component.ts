@@ -85,7 +85,7 @@ export class DevikapuramComponent {
       },
       series: [{
         name: 'Interest',
-        data: [24000]    
+        data: [160000]    
       }, {
         name: 'Total Amount',
         data: [400000]
